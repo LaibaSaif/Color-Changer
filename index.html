@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter your favourite color</label>
+    <input id="t1" > 
+    <button type="button" onclick="real()">try</button>
+    <script>
+        function real(){
+         let color = document.getElementById("t1").value;
+         if (color == "") {
+        alert("Enter a color");
+    }
+    else {
+        document.body.style.backgroundColor = color;
+
+        if (document.body.style.backgroundColor == "") {
+            alert("Invalid color");
+        }
+    }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
