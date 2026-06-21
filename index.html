@@ -16,15 +16,16 @@
          let color = document.getElementById("t1").value;
          if (color == "") {
         alert("Enter a color");
+        return;
     }
-    else {
-        document.body.style.backgroundColor = color;
+     document.body.style.backgroundColor = "";
+
+    document.body.style.backgroundColor = color;
 
         if (document.body.style.backgroundColor == "") {
             alert("Invalid color");
         }
     }
-        }
     </script>
 </body>
 </html>
